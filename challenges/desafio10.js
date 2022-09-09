@@ -4,5 +4,5 @@ db.produtos.find(
       $elemMatch: { tipo: "proteínas", percentual: { $gte: 30, $lt: 40 } },
     },
   },
-  { _id: 0, nome: 1 }
+  { _id: 0, nome: 1 },
 );
